@@ -1,0 +1,521 @@
+html,body,#home{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+body::-webkit-scrollbar {
+    width:0.25rem;
+    }
+::-webkit-scrollbar-track {
+    background:rgba(1, 1, 1, 0.7);
+    }
+    
+::-webkit-scrollbar-thumb {
+    background:rgba(232, 38, 82);
+}
+
+
+.subir:hover, .fab:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+#img:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(0.9);
+}
+body{
+    background: url(../Imagens/Geral/menu-6.jpg); 
+    background-attachment: fixed;
+    background-size: 1400px 900px;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+.espacamento{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*Menu
+-------------------*/
+
+nav.corNav{
+    background: rgba(0,0,0,0.3);
+    transition: 1s;
+}
+
+ .navbar-nav .nav-link{
+    color: white;
+}
+
+ .navbar-nav .nav-link:hover{
+    
+    color: rgb(232, 38, 82);
+}
+
+.nav-item{
+    margin-bottom: 0;
+}
+
+
+/*Home
+-------------------*/
+section#home .fa-angle-double-right
+{
+    transform: rotate(0deg);
+}
+section#home .btn:hover .fa-angle-double-right{
+    transform:rotate(-270deg);
+}
+
+section#home h1{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+section#home a{
+    border-bottom: 1px solid white;
+    color: rgb(232, 38, 82);
+    text-align: center;
+    padding: 15px 30px;
+    transition: all 1s ease-out;
+}
+section#home a:hover{
+    position: relative;
+    color: white;
+    border-bottom: 1px solid rgb(232, 38, 82);
+    border-radius: 20px;
+    transition: 2s ease;
+}
+
+section .text h2{
+    background-color: rgb(232, 38, 82);
+    font-family: arial black;
+    text-align:center;
+    font-size:60px;
+    color:white;
+    -webkit-background-clip: text;
+    color:transparent;    
+}
+
+section .text h3{
+    text-align:center; 
+    font-size:1em;
+}
+
+section .world
+{
+    font-size:0.9em;
+    font-family:'Trebuchet MS'
+}
+section .text p{
+    text-align:center;
+}
+
+/*Responsive
+------------------*/
+section#responsive{
+    background-color: white;
+}
+
+section#responsive img{
+    margin:0;
+    transition: 0.7s;
+}
+
+section#responsive img:hover{
+    margin-left: 30px;
+    transition: 0.7s;
+}
+
+section#responsive button{
+    transition: 0.9s;
+    background-color:rgb(232, 38, 82);
+}
+
+section#responsive button:hover{
+    margin-left: 15px;
+    transition: 0.9s;
+    background-color: green;
+}
+
+
+section#responsive .cursor{
+    cursor: pointer;
+}
+
+/*E-commerce
+------------------*/
+section#ecommerce{
+    background-color: black;
+    color: white;
+}
+
+section#ecommerce h2{
+    color: rgb(232, 38, 82);
+}
+
+section#ecommerce img{
+    margin:0;
+    transition: 0.7s;
+}
+
+section#ecommerce img:hover{
+    margin-right: 30px;
+    transition: 0.7s;
+}
+
+section#ecommerce button{
+    background: rgb(232, 38, 82);
+    border: 1px solid black;
+    transition: 0.9s;
+}
+section#ecommerce button:hover{
+    background: green;
+    margin-left: 15px;
+    transition: 0.9s;
+}
+
+
+section#ecommerce .cursor{
+    cursor: pointer;
+}
+
+/* Marketing
+------------------*/
+section#marketing{
+    background-color:white;
+    color: black;
+}
+
+section#marketing img{
+    margin:0;
+    transition: 0.7s;
+}
+
+section#marketing img:hover{
+    margin-left: 30px;
+    transition: 0.7s;
+}
+
+section#marketing button{
+    background: rgb(232, 38, 82);
+    transition: 0.9s;
+
+}
+section#marketing button:hover{
+    background: green;
+    border: 1px solid black;
+    margin-left: 15px;
+    transition: 0.9s;
+}
+
+section#marketing .cursor{
+    cursor: pointer;
+}
+
+
+/*Portfolio
+-------------------------*/
+section#portfolio{
+    color: white;
+    background-image: url(../Imagens/Portfolio/fundo-portfolio.jpg);
+    background-attachment: fixed; 
+    background-size: 1100px;
+}
+
+section#portfolio h3{
+    border-bottom: 2px solid rgb(232, 38, 82);
+    width: 300px;
+    margin-left:150px;
+}
+
+section#portfolio h2{
+    margin-left: 20px;
+    
+}
+
+section#portfolio h4{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(232, 38, 82);
+    
+}
+
+section#portfolio img{
+    border: 1px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+section#portfolio a{
+    margin-top: 10px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    color: white;
+    text-align: center;
+    padding: 10px 10px; 
+}
+
+section#portfolio a:hover{
+    border: 1px solid black;
+    color: rgb(232, 38, 82);
+}
+
+/*Contato
+----------------------------*/
+section#contato{
+    background-color: white;
+}
+
+section#contato h3{
+    color: rgb(232, 38, 82);
+    border-bottom: 1px solid black;  
+}
+
+section#contato label{
+   font-size: 1.2em;
+   margin-top: 10px;
+}
+
+section#contato input{
+    border: 0;
+    border-bottom: 2px solid black;
+    transition: all .9s ease;
+ }
+
+ section#contato input:hover{
+    border-bottom: 2px solid rgba(232, 38, 82, 0.6);
+    transition: all .9s ease;
+ }
+
+ section#contato :focus{
+    border: none;
+    border-bottom: 2px solid rgb(232, 38, 82);
+    background-color: white;
+    opacity: 1;
+    color: black;
+    transition: all .9s ease;
+ }
+ 
+ section#contato label{ 
+    transition: all 1s ease;
+ } 
+
+section#contato label:hover{
+    color: rgba(232, 38, 82, 0.8);
+    margin-left: 5px;
+    transition: all 1s ease;
+ }
+
+
+/*Sobre
+----------------------------*/
+section#sobre{
+    color: white; 
+    background: url(../Imagens/Sobre/fundo-sobre.jpg); 
+    background-size: 1400px 1300px;
+    background-repeat: no-repeat;
+}
+
+section#sobre h2{
+    border-bottom: 2px solid rgb(232, 38, 82);
+    width: 110px;
+    margin-left: 10px;
+}
+
+section#sobre p{
+    margin-left: 10px;
+}
+
+/* * equipe */
+section#equipe{
+    background-color: white;
+}
+
+section#equipe .dev img{
+    height: 320px;
+    width: 240px;
+}
+
+ section#equipe .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.5s;
+    width: 240px;
+    border-radius: 25px;
+  }
+  
+  section#equipe .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+  }
+  
+  section#equipe .card-body {  
+    height: 150px;
+  }
+
+  section#equipe .card-body i{  
+    color: rgba(232, 38, 82, 0.5);
+    transition: 1s ease;
+
+  }
+
+  section#equipe .card-body i:hover{  
+    color: rgb(232, 38, 82);
+    margin-left: 10px;
+    font-size: 20px;
+    transition: 1s ease;
+}
+
+
+section#equipe button{
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    padding: 15px 30px;
+    transition: all .9s ease;
+}
+
+section#equipe button:hover{
+    font-size: 20px; 
+    border: 1px solid rgb(232, 38, 82);
+    background: black;
+    color: white;
+    transition: all .7s ease;
+}
+
+section#equipe .redes-fun{
+    margin-top: 20px;
+    background: rgba(1, 1, 1, 0.1);
+    width: 260px;
+}
+
+ /*Chat
+----------------------------*/
+
+/* Botao*/
+.open-button {
+    color: black;
+    padding: 16px 20px;
+    border: 1px solid white;
+    border-radius: 200px;
+    cursor: pointer;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 45px;
+    right: 28px;
+    width: 58px;
+  }
+  
+  /* chat pop-up */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 9px;
+    z-index: 9;
+  }
+  
+  /*Bloco do chat*/
+  .form-container {
+    max-width: 250px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  /*Textarea do chat*/
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgba(250, 250, 250, 0.7);
+    resize: none;
+    min-height: 200px;
+  }
+
+  .form-container textarea:hover {
+    background-color: rgba(250, 250, 250, 0.4);
+  }
+  
+  /*Textarea do chat ao escrever*/
+  .form-container textarea:focus {
+    background-color: rgba(250, 250, 250, 0.1);
+    color: white;
+    outline: none;
+  }
+  
+  /*Botao para enviar*/
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom:10px;
+    margin-left: 50px;
+    opacity: 0.4;
+  }
+  
+  /*Botao para sair*/
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+ /* /Chat
+----------------------------*/
+
+
+ /*Rodapé
+----------------------------*/
+footer#rodape {
+    color: white;
+    background: black;
+}
+
+
+footer#rodape a{
+    color:  rgb(232, 38, 82);
+}
+
+footer#rodape a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+footer#rodape .subir a{
+    margin-top: 10px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    color: white;
+    text-align: center;
+    padding: 10px 10px; 
+}
+
+footer#rodape .subir a:hover{
+    border: 1px solid whitesmoke;
+    color: rgb(232, 38, 82)
+}

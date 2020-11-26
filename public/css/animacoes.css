@@ -1,0 +1,346 @@
+
+/* Transicao ao abri o site */
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+.fadeIn {
+        -webkit-animation: fadeIn 2s ease-in-out;
+        -moz-animation: fadeIn 2s ease-in-out;
+        -o-animation: fadeIn 2s ease-in-out;
+        animation: fadeIn 2s ease-in-out;
+}
+
+/* Rotacao das palavras no inicio*/
+.rotacao h2 span{
+    font-size: 60px;
+    font-family: arial black;
+}
+
+.rotacao h2 span:before
+{
+    content:'';
+    animation:animate infinite 16s;
+    text-decoration-color:rgb(232, 38, 82);
+    border-bottom: 5px solid rgb(232, 38, 82);
+}
+
+@keyframes animate
+{
+    0%{
+        content:'Crescimento!';
+    }
+    25%{
+        content:'Inovação!';
+    }
+    50%{
+        content:'Tecnologia!';
+    }
+    75%{
+        content:'Negócios!';
+    }
+    100%{
+        content:'Você.';
+    }
+
+}
+
+/* Animação menu */
+.border-animation {
+    height: 2px;
+    width: 10px;
+    transition: all .9s ease;
+    border-bottom: 2px solid rgb(232, 38, 82);
+}
+
+a:hover  .border-animation{
+    height: 2px;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+/* animacao equipe */
+section#recursos .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(232, 38, 82,0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+section#recursos .col-md-3:hover .overlay {
+    border: 1px solid black;
+    border-radius: 15px;  
+    width: 100%;
+    transition: all .9s ease;
+}
+  
+section#recursos .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+/* Carregamento de Loading*/
+.load {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    color: blue;
+ }
+
+
+/* Animacao portfolio*/ 
+ #container .box
+{
+    position:relative;
+    width:450px;
+    height:260px;
+    background:transparent;
+}
+#container .box .imgBx
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+}
+#container .box .imgBx img
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+#container .box .contentBx #content
+{
+    position:relative;
+    padding:20px 60px;
+    opacity: 0;
+
+}
+#container .box:hover .contentBx #content
+{
+    opacity:1;
+    transition:0.7s;
+    transition-delay:0.7s;
+}
+#container .box .contentBx #content h2
+{
+    color:#fff;
+    font-weight:500;
+    margin-bottom:10px;
+}
+#container .box .contentBx #content p
+{
+    color:#fff;
+    font-weight:300;
+}
+#container .box .contentBx #content p a
+{
+    color:#fff;
+    font-weight:300;
+}
+#container .box .contentBx #content p a .btn
+{
+    color:#fff;
+    font-weight:300;
+    align-items:center;
+}
+#container .box .contentBx
+{
+    position:absolute;
+    top:40px;
+    bottom:40px;
+    right:20px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background:rgba(232, 38, 82,0.7);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transition: 1s;
+    transform-origin: left;
+    transform: scaleX(0);
+
+}
+#container .box:hover .contentBx
+{
+    transition: 1s;
+    transform-origin: right;
+    transform:scaleX(1); 
+}
+
+
+/* Animacao Sobre */
+
+section #cont /* Tamanho do card */
+{
+    width:1000px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+section #cont .card /* Background do Card */
+{
+    height:300px;
+    background:rgba(0,0,0,0.4);
+}
+
+section #cont .card .content h3 /* Tamanhos da das fontes de textos */
+{
+    margin-bottom:5px;
+    font-size:24px;
+}
+
+section #cont .card .imgBx /* Tamanhos da imagem */
+{
+    position:absolute;
+    top:0;
+    justify-content:center;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#333;
+    z-index:1 ;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden ;
+    transition:1s ease-in-out;
+}
+
+section #cont .card .imgBx img 
+{
+    max-width:50px;
+    transition:0.5s ease-in-out;
+}
+section #cont .card:hover .imgBx img
+{
+    max-width:75px;
+}
+
+/*Transicao da imagem */
+section #cont .card .imgBx:before 
+ {
+    content:attr(data-text);
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    font-size:6em;
+    color:rgba(255,255,255,.05);
+    font-weight:700;
+}
+section #cont .card:hover .imgBx
+{
+    width:120px;
+    height:120px;
+    left:-75px;
+    top: calc(100% - 75px);
+    transition:0.7s ease-in-out;
+    background:rgba(232, 38, 82);
+}
+/* Fim Transicao da imagem */
+
+/* Animação ao abri o site */
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; 
+        margin-top: 20px;}
+    100% 
+    {  opacity: 1; 
+       margin-top: 0px;
+    }
+    }
+.fadeIn {
+        -webkit-animation: fadeIn 2s ease-in-out;
+        -moz-animation: fadeIn 2s ease-in-out;
+        -o-animation: fadeIn 2s ease-in-out;
+        animation: fadeIn 2s ease-out;
+}
+
+
+/*animacao menu ao descer scroll */
+nav 
+{
+    background: none;
+    transition: .7s;
+}
+nav.corNav
+{
+    background:rgba(1, 1, 1, 0.4);
+    transition: .9s;
+}
+
+
+
+/* Animacao de Surgimento de conteudo */
+
+[data-anime] {
+    opacity: 0;
+    transition: 5s;
+  }
+  
+  [data-anime="esquerda"] {
+    transform: translate3d(-120px, 0, 0);
+  }
+  
+  [data-anime="direita"] {
+    transform: translate3d(220px, 0, 0);
+
+  }
+  
+  [data-anime="top"] {
+    transform: translate3d(0, -120px, 0);
+  }
+  
+  [data-anime].animacao {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transition: 2.25s;
+
+  }

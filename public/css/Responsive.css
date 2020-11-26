@@ -1,0 +1,281 @@
+
+/* Media Queries
+-------------------------/*
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    /* Background home */
+    body{ 
+        background: url(../Imagens/Geral/menu-2.jpg); 
+        background-size: 600px 830px;
+        background-repeat: no-repeat;
+    }
+
+    /* Cor do Botao abaixo do slogan */
+    section#home a{
+        border-bottom: 1px solid rgb(232, 38, 82);
+        color: white;
+
+    }
+    section#home a:hover{
+        color: rgb(232, 38, 82);
+        border-bottom: 1px solid white;
+    }
+
+    /* Rotacao das palavras no inicio*/
+    .rotacao h2 span{
+        font-size: 40px;
+        font-family: arial black;
+    }
+    
+    /* Cards dos Integrantes*/
+    section#recursos .equipe{
+        display: none;
+    }
+
+    section .text h2{ /* Tamanho do nome da empresa */
+        font-size:40px;
+    }
+
+    .slogan{/* Slogan */
+        font-size: 20px;
+        display: none;
+    }
+
+    /* Espcaçamento do canto */
+    nav.navbar-transparente a{
+        margin-left: 10px;
+    }
+
+
+    section #cont /* Tamanho do card */
+    {
+        width:300px;
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+
+    }
+
+    section #cont .card .imgBx img /* Tamanho da animaçao */
+    {
+        max-width:50px;
+        transition:0.5s ease-in-out;
+    }
+    section #cont .card:hover .imgBx img
+    {
+        max-width:35px;
+    }    
+
+    /*Portfolio*/
+    section#portfolio h3{
+        width: 200px;
+        margin-left:90px;
+        font-size: 16px;
+    }
+
+    #container .box .contentBx #content h2
+    {
+        color:#fff;
+        font-weight:500;
+        font-size: 30px;
+        margin-left: 13px;
+    }
+
+    #container .box
+    {
+        width:200px;
+    }
+
+    section#portfolio #container .box .imgBx img /* Tamanho das Imagens do Portifolio */
+    {
+        width: 125%;
+        height: 200px;
+        margin-left: 20px;
+        object-fit: cover;
+    }
+
+    section#portfolio h3{
+        margin-left:50px;
+    }
+
+    #container .box .contentBx
+    {
+        position:absolute;
+        top:40px;
+        bottom:90px;
+        left:30px;
+        width:120%;
+        height: 50%;
+
+    }
+
+    /*Contato */
+    textarea{ /* Tamanho da area de texto do "Contato" */
+        width: 300px;
+        height: 150px;
+    }
+
+    /*Sobre */
+    section#sobre{
+        background: url(../Imagens/Sobre/fundo-sobre.jpg);
+        background-attachment: fixed; 
+        background-size: 100% 800px;     
+        font-size: 14px;   
+    }
+
+    section #cont .card:hover .imgBx
+    {
+        width:90px;
+        height:90px;
+        left:-95px;
+    }
+    /*Sobre */
+
+    /*Chat*/
+    .open-button {
+        display: none;
+      }
+ }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Background home */
+    body{
+        background-size: 100% 700px;
+        background-repeat: no-repeat;
+    }
+
+    nav a:hover{
+        border-bottom: 0px solid rgb(232, 38, 82);
+    }
+
+    /* Rotacao das palavras no inicio*/
+    .rotacao h2 span{
+        font-size: 50px;
+        font-family: arial black;
+    }
+ 
+    section#recursos .equipe{
+        display: none;
+    }
+
+    section#portfolio #container .box .imgBx img /* Tamanho das Imagens do Portifolio */
+    {
+        width: 330px;
+        height: 220px;
+        margin-top: 15px;
+        margin-left: 120px;
+        object-fit: cover;
+    }
+
+    section .text h2{ /* Tamanho do nome da empresa */
+        font-size:50px;
+    }
+
+    .slogan{/* Slogan */
+        font-size: 25px;
+    }
+
+    nav.navbar-transparente a{
+        margin-left: 5px;
+    }
+
+    textarea{ /* Tamanho da area de texto do "Contato" */
+        width: 300px;
+        
+    }
+
+    
+ }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body{ 
+        background-size: 900px 1000px;
+        background-repeat: no-repeat;
+    }
+    section .text h2{ /* Tamanho do nome da empresa */
+        font-size:50px;
+    }
+
+    .slogan{/* Slogan */
+        font-size: 30px;
+    }
+
+    /* equipe */
+    section#recursos .dev img{
+        height: 320px;
+        width: 150px;
+    }
+
+    section#recursos .card{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+        transition: 0.5s;
+        width: 150px;
+    }
+    
+    section#recursos .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+    }
+    
+    section#recursos .card-body {  
+        height: 150px;
+    }
+
+    textarea{  
+        width: 350px;
+    }
+
+    section#portfolio #container .box .imgBx img /* Tamanho das Imagens do Portifolio */
+    {
+        width: 350px;
+        height: 240px;
+    }
+
+    section#portfolio #container .box .imgBx .distanciamento/* Tamanho das Imagens do Portifolio */
+    {
+        margin-left: 13px;
+    }
+
+    section#recursos h4{
+        font-size: 20px;
+    }
+
+    /*Portfolio */
+    #container .box .contentBx
+    {
+        position:absolute;
+        top:40px;
+        bottom:40px;
+        right:90px;
+        width:80%;
+        transition: 1s;
+        transform-origin: left;
+        transform: scaleX(0);
+
+    }
+    
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body{ 
+        background-size: 100% 1000px;
+        background-repeat: no-repeat;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    body{ 
+        background-size: 100% 1000px;
+        background-repeat: no-repeat;
+    }
+
+    section#sobre{
+        background: url(../Imagens/Sobre/fundo-sobre.jpg);
+        background-attachment: fixed; 
+        background-size: 100% 1000px;        
+    }
+}
