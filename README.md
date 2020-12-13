@@ -1,7 +1,10 @@
-# Students Web Developers
+## Students Web Developers
 Front-End de uma start-up com intuito de apenas estudos e pratica.
 
-Tecnologias Utilizadas: 
+![homePage](https://user-images.githubusercontent.com/60657968/102001193-ebfb2880-3ccd-11eb-9182-ff3af5625e75.png)
+
+
+## Tecnologias Utilizadas: 
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
 ![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
